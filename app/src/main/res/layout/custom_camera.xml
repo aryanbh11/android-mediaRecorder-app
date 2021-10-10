@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomCameraActivity">
+
+    <FrameLayout
+        android:id="@+id/cameraFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/takePhoto" />
+
+    <Button
+        android:id="@+id/takePhoto"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/recordVideo"
+        android:onClick="onTakePhotoClick"
+        android:backgroundTint="@color/black"
+        android:text="📷" />
+
+    <Button
+        android:id="@+id/recordVideo"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:onClick="onRecordVideoClick"
+        android:backgroundTint="@color/black"
+        android:text="📹" />
+
+</RelativeLayout>

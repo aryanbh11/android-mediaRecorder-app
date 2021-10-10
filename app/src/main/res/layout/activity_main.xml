@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/openCamera"
+        android:numColumns="auto_fit"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/openCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/updateCloud"
+        android:onClick="onOpenCameraClick"
+        android:text="OPEN CAMERA" />
+
+    <Button
+        android:id="@+id/updateCloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="onUpdateCloudClick"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="UPDATE CLOUD" />
+
+</RelativeLayout>
